@@ -1,17 +1,20 @@
-// Program 2 - Calculate Sam's average mark in PCM
+// Program 2 - Area of Triangle in square inches and square centimeters
 
 class Problem2 {
     public static void main(String[] args) {
 
-        // Marks in three subjects
-        int math = 94;
-        int physics = 95;
-        int chemistry = 98;
+        // Base and height of triangle
+        double base = 14.0;  // inches
+        double height = 6.0; // inches
 
-        // Calculate average
-        double average = (math + physics + chemistry) / 3.0;
+        // Formula: 1/2 * base * height
+        double areaSqInches = 0.5 * base * height;
 
-        // Display the result
-        System.out.println("Sam's average mark in PCM is " + average);
+        // Convert sq inches to sq cm (1 in = 2.54 cm → 1 sq in = 6.4516 sq cm)
+        double areaSqCm = areaSqInches * 6.4516;
+
+        // Display results
+        System.out.println("The area of the triangle in square inches is " + areaSqInches +
+                           " and in square centimeters is " + areaSqCm);
     }
 }

@@ -1,18 +1,19 @@
-// Program 3 - Convert distance in kilometers to miles
+// Program 3 - Find side of a square from its perimeter
+
+import java.util.Scanner;
 
 class Problem3 {
     public static void main(String[] args) {
 
-        // Distance in kilometers
-        double km = 10.8;
+        Scanner sc = new Scanner(System.in);
 
-        // Conversion factor
-        double milesPerKm = 1.6;
+        System.out.print("Enter the perimeter of the square: ");
+        double perimeter = sc.nextDouble();
 
-        // Convert km to miles
-        double miles = km * milesPerKm;
+        // Perimeter = 4 * side
+        double side = perimeter / 4;
 
-        // Display the result
-        System.out.println("The distance " + km + " km in miles is " + miles);
+        // Display result
+        System.out.println("The length of the side is " + side);
     }
 }

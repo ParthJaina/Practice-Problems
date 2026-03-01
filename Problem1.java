@@ -1,18 +1,28 @@
-// Program 1 - Calculate Harry's age in 2024
+// Program 1 - Basic Calculator for two floating point numbers
+
+import java.util.Scanner;
 
 class Problem1 {
     public static void main(String[] args) {
 
-        // Create a variable birthYear to store the birth year
-        int birthYear = 2000;
+        Scanner sc = new Scanner(System.in);
 
-        // Create a variable currentYear to store the current year
-        int currentYear = 2024;
+        // Input two numbers
+        System.out.print("Enter number1: ");
+        float number1 = sc.nextFloat();
 
-        // Calculate the age
-        int age = currentYear - birthYear;
+        System.out.print("Enter number2: ");
+        float number2 = sc.nextFloat();
 
-        // Display the result
-        System.out.println("Harry's age in " + currentYear + " is " + age);
+        // Perform operations
+        float addition = number1 + number2;
+        float subtraction = number1 - number2;
+        float multiplication = number1 * number2;
+        float division = number1 / number2;
+
+        // Display results
+        System.out.println("The addition, subtraction, multiplication, and division value of the two numbers "
+                + number1 + " and " + number2 + " are "
+                + addition + ", " + subtraction + ", " + multiplication + ", and " + division);
     }
 }

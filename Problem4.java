@@ -1,23 +1,21 @@
-// Program 4 - Calculate Profit and Profit Percentage
+// Program 4 - Convert distance in feet to yards and miles
+
+import java.util.Scanner;
 
 class Problem4 {
     public static void main(String[] args) {
 
-        // Store cost price and selling price
-        int costPrice = 129;
-        int sellingPrice = 191;
+        Scanner sc = new Scanner(System.in);
 
-        // Calculate profit
-        int profit = sellingPrice - costPrice;
+        System.out.print("Enter distance in feet: ");
+        double distanceInFeet = sc.nextDouble();
 
-        // Calculate profit percentage
-        double profitPercentage = (profit / (double)costPrice) * 100;
+        // Conversion factors
+        double yards = distanceInFeet / 3.0;
+        double miles = distanceInFeet / 1760.0;
 
         // Display results
-        System.out.println("The Cost Price is INR " + costPrice + 
-                           " and Selling Price is INR " + sellingPrice);
-
-        System.out.println("The Profit is INR " + profit + 
-                           " and the Profit Percentage is " + profitPercentage);
+        System.out.println("The distance in yards is " + yards +
+                           ", while the distance in miles is " + miles);
     }
 }

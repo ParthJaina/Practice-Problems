@@ -1,20 +1,15 @@
-// Program 5 - Divide pens among students and find the remainder
+// Program 5 - Calculate total purchase price
 
 class Problem5 {
     public static void main(String[] args) {
 
-        // Total pens and number of students
-        int totalPens = 14;
-        int students = 3;
+        int unitPrice = 50;   // INR
+        int quantity  = 4;    // items
 
-        // Find pens per student (quotient)
-        int pensPerStudent = totalPens / students;
+        int totalPrice = unitPrice * quantity;
 
-        // Find remaining pens (remainder)
-        int remainingPens = totalPens % students;
-
-        // Display results
-        System.out.println("The Pen Per Student is " + pensPerStudent +
-                           " and the remaining pen not distributed is " + remainingPens);
+        System.out.println("The total purchase price is INR " + totalPrice +
+                           " if the quantity is " + quantity +
+                           " and unit price is INR " + unitPrice);
     }
 }
